@@ -1,0 +1,11 @@
+<section>
+    <h2>Agregá un Pokemon</h2>
+    <app-form-pokemon (emitirPokemon)="recibirPokemon($event)"></app-form-pokemon>
+    <hr />
+    <h2>Equipo</h2>
+    <ul class="lista">
+        <li *ngFor="let item of listaPokemon">
+            <app-card-pokemon [pokemoncard]="item"></app-card-pokemon>
+        </li>
+    </ul>
+</section>

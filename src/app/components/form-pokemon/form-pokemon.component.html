@@ -1,0 +1,38 @@
+<form (ngSubmit)="agregarPokemon()">
+    <label for="">Número Pokedex:</label>
+    <input 
+        type="number"
+        [(ngModel)]="pokemon.numero_pokedex"
+        [ngModelOptions]="{ standalone: true }"
+    />
+    <label for="">Nombre:</label>
+    <input 
+        type="text"
+        [(ngModel)]="pokemon.nombre"
+        [ngModelOptions]="{ standalone: true }"
+    />
+    <label for="">Tipo:</label>
+    <input 
+        type="text"
+        [(ngModel)]="pokemon.tipo1"
+        [ngModelOptions]="{ standalone: true }"
+    />
+    <input 
+        type="text"
+        [(ngModel)]="pokemon.tipo2"
+        [ngModelOptions]="{ standalone: true }"
+    />
+    <label for="">Habilidad:</label>
+    <input 
+        type="text"
+        [(ngModel)]="pokemon.habilidad"
+        [ngModelOptions]="{ standalone: true }"
+    />
+    <label for="">Descripción de Pokedex:</label>
+    <input 
+        type="text"
+        [(ngModel)]="pokemon.descripcion"
+        [ngModelOptions]="{ standalone: true }"
+    />
+    <button>Agregar</button>
+</form>

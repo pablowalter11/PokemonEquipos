@@ -1,0 +1,8 @@
+.lista{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.lista li{
+    list-style-type: none;
+}
